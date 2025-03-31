@@ -25,13 +25,20 @@
         },
 
         {
-          "title": "Lab 3: Setup Sakila Sample Database and JavaScript Stored Function",
+          "title": "Lab 3: Setup Sakila Sample Database and configure Vector datatype",
           "filename": "../../setup-sakila/setup-sakila.md"
         },
+
         {
 
           "title": "Lab 4: Build and Test Apache/ PHP/ MySQL Web Application ",
           "filename": "../../develop/develop.md"
+        },
+
+        {
+
+          "title": "Lab 4: Build GENAI  Application ",
+          "filename": "../../build-ai-app/build-ai-app.md"
         },
 
         {

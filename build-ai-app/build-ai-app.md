@@ -1,10 +1,14 @@
-# Build and Test Apache/ PHP/ MySQL Web Application
+# Build MySQL AI Application
 
 ## Introduction
 
 MySQL Enterprise Edition integrates seamlessly with the LAMP (Linux, Apache, MySQL, PHP) stack, enhancing open-source capabilities with enterprise features. MySQL EE works with the LAMP stack by:
 
-_Estimated Lab Time:_ 10 minutes
+After installing the LAMP Stack , you will Deploy and test the "Sakila Film Library with Time Converter" web application. This application displays the Sakila.Film data while providing a time conversion tool. Users can enter seconds and convert them to either HH:MM:SS format or written time descriptions using MySQL Enterprise Edition's JavaScript function. This LAMP-based application demonstrates practical use of database features within MySQL Enterprise Edition.
+
+**Note:** The application code in this lab is intended for educational purposes only. It is designed to help developers learn and practice application development skills with MySQL Enterprise Edition. The code is not designed to be used in a production environment
+
+_Estimated Lab Time:_ 15 minutes
 
 ### Objectives
 
@@ -12,6 +16,7 @@ In this lab, you will be guided through the following tasks:
 
 - Install Apache and PHP
 - Learn to create PHP / MYSQL Connect Application
+- Deploy the Sample LAMP WEB Application
 
 ### Prerequisites
 
@@ -198,6 +203,59 @@ In this lab, you will be guided through the following tasks:
 6. From your local  machine connect to dbtest.php
 
     Example: http://129.213.167..../dbtest.php  
+
+## Task 4: Deploy Sakila Film Web / MySQL JavaScript Stored Function Application
+
+1. Go to the development folder
+
+    ```bash
+    <copy>cd /var/www/html</copy>
+    ```
+
+2. Download application code
+
+    ```bash
+    <copy> sudo wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/Ebnl0Yd1YwZkXBiQYZQu6nljiMWSTb9TdhZd4fF9SNGILS_QkYgr_q8E-VBd3x1Z/n/idazzjlcjqzj/b/livelab_apps/o/sakila-web.zip</copy>
+    ```
+
+3. unzip Application code
+
+    ```bash
+    <copy>sudo unzip sakila-web.zip</copy>
+    ```
+
+    ```bash
+    <copy>cd sakila-web</copy>
+    ```
+
+4. Run the application as follows (Use your coupute IP address):
+
+    http://127.0.0.../sakila-web/
+
+    ![Sakila Web](./images/sakila-list.png "Sakila Web")
+
+5. Test the application with following examples(Enter seconds, then select **short** or **long** format):
+
+    a. Test Case 1 - Movie Length:
+    - Input: 7200 seconds (typical movie)
+    - Short format: 02:00:00
+    - Long format: 2 hours
+
+    b. Test Case 2 - TV Episode:
+    - Input: 1350 seconds (22.5 minute show)
+    - Short format: 00:22:30
+    - Long format: 22 minutes 30 seconds
+
+    c. Test Case 3 - Long Film:
+    - Input: 18105 seconds (Lord of the Rings style)
+    - Short format: 05:01:45
+    - Long format: 5 hours 1 minute 45 seconds
+
+    d. Test Case 4 - Short Clip:
+    - Input: 90 seconds (quick scene)
+    - Short format: 00:01:30
+    - Long format: 1 minute 30 seconds
+
 
 ## Learn More
 
