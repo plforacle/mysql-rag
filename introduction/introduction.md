@@ -2,17 +2,55 @@
 
 ## About this Workshop
 
-This hands-on workshop is designed to help you get started with MySQL Enterprise Edition, a powerful database management system. You'll learn the fundamentals of installing, configuring, and using MySQL Enterprise Edition, with a focus on its JavaScript Stored Procedure and Function feature.
+Welcome to this comprehensive workshop on creating an AI-powered film information retrieval system! In this guide, you'll learn how to build a sophisticated chatbot that combines the power of large language models with MySQL's vector capabilities to deliver accurate, contextually relevant information about films.You will build a modern information retrieval system combining traditional databases with cutting-edge AI capabilities. By the end of this session, you'll understand how to create your own Retrieval Augmented Generation (RAG) systems using familiar LAMP stack technologies.
 
-In this workshop, you'll work through a series of guided tasks and exercises that will help you understand the basics of MySQL Enterprise Edition, including:
+### What We'll Cover 
 
-- Installing and configuring the server
-- Creating and managing databases
-- Using JavaScript to create stored procedures and functions
-- Implementing a LAMP (Linux, Apache, PHP, and MySQL) stack for web development
-- Deploying a sample web application, the "Sakila Film Time Converter", which demonstrates the use of MySQL JavaScript functions
+FilmRAG represents a significant shift in how we think about database applications. Instead of simply storing and retrieving exact matches, this application understands the meaning behind user queries and returns semantically relevant information.
 
-By the end of this workshop, you'll have a solid foundation in MySQL Enterprise Edition and be able to start building your own databases and applications. Our goal is to provide you with a comprehensive and practical introduction to MySQL Enterprise Edition.
+Imagine a user asking "What are some good movies for a rainy Sunday afternoon?" A traditional database would struggle with this query, but FilmRAG can interpret the intent and provide contextually appropriate recommendations.
+
+In  our workshop, we'll:
+
+1. **Create the User Experience**: Develop a responsive chat interface for natural interaction
+2. **Explore the RAG Architecture**: Understand how Retrieval Augmented Generation works and why it's transforming information retrieval
+3. **Examine Vector Embeddings**: Learn how text is converted into mathematical representations that capture meaning
+4. **Implement MySQL Vector Functions**: See how MySQL Enterprise Edition supports vector operations without specialized databases
+5. **Build the Integration Layer**: Connect database retrieval with language models 
+
+
+### Why This Matters
+
+In today's information-rich environment, users expect systems to understand their intent, not just their exact words. Traditional keyword-based search is being rapidly replaced by semantic search that understands meaning.
+
+FilmRAG demonstrates:
+- How to leverage existing database investments for AI applications
+- Creating factually grounded responses that avoid hallucinations
+- Building conversational interfaces to structured data
+- Implementing vector search without complex infrastructure
+
+### Workshop Format
+
+This will be hands-on! We'll be:
+- Walking through the codebase component by component
+- Making modifications to understand core concepts
+- Testing different query types and observing the results
+- Discussing implementation strategies for your own projects
+
+### What You Need
+
+To follow along, you should have:
+- A basic understanding of the LAMP stack (Linux, Apache, MySQL, PHP)
+- Familiarity with API calls and JSON processing
+- A curious mind and questions ready
+
+### The Big Picture
+
+What makes FilmRAG special is that it bridges the gap between traditional database applications and modern AI capabilities. We're not replacing databases with AI - we're enhancing databases with semantic understanding while maintaining their reliability and specificity.
+
+By the end of this workshop, you'll understand how to implement these same principles in your own domain, whether that's e-commerce product search, knowledge base enhancements, or content recommendation systems.
+
+Let's get started by examining the core components of our application and how they work together to create an intelligent film information system!
 
 _Estimated Workshop Time:_ 90 minutes
 
@@ -39,11 +77,11 @@ If you want to use MySQL Enterprise Edition in a production environment, you wil
 
 In this lab, you will be guided through the following steps:
 
-1. Install MySQL Enterprise Edition (Developer Download from Oracle Technology Network (OTN))  
-2. Install Sample Database Sakila
-3. Create and configure JavaScript stored program  / Function
-4. Install Configure and test Linux, Apache, PHP,and  MySQL(LAMP) Development Stack
-5. Deploy Sample application using Sakilaa data and MySQL JavaScript Function
+Lab 2: Build and Test Apache / PHP Installation
+Lab 3: Build Chatbot Application
+Lab 4: Install Enterprise Edition
+Lab 5: Setup Sakila Sample Database and configure Vector datatype
+Lab 6: Build MySQL Vector AI Application
 
 You may now **proceed to the next lab**
 
