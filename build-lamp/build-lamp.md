@@ -122,6 +122,8 @@ In this lab, you will be guided through the following tasks:
    Example: http://129.213.167.../info.php
 
 
+You may now **proceed to the next lab**
+
 ## Acknowledgements
 
 - **Author** - Craig Shallahamer, Applied AI Scientist, Viscosity North America

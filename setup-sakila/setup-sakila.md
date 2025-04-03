@@ -121,6 +121,8 @@ This lab assumes you have:
     <copy>\q</copy>
     ```
 
+You may now **proceed to the next lab**
+
 ## Acknowledgements
 
 - **Author** - Craig Shallahamer, Applied AI Scientist, Viscosity North America
