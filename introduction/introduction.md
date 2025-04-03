@@ -16,10 +16,6 @@ By the end of this workshop, you'll have a solid foundation in MySQL Enterprise 
 
 _Estimated Workshop Time:_ 90 minutes
 
-**Watch this MySQL Enterprise Edition Quick Introduction  Video**
-
-[](youtube:RJ9p5tUzlmY)
-
 ## About Product/Technology
 
 MySQL Enterprise Edition is a comprehensive database solution that offers advanced features for building scalable, secure, and highly available applications. Its key benefits include:
