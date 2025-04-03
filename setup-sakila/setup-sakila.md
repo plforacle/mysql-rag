@@ -19,7 +19,7 @@ In this lab, you will be guided through the following tasks:
 
 This lab assumes you have:
 
-- Completed Labs 2
+- Completed Labs 4
 
 ## Task 1: Install Sakila Database
 

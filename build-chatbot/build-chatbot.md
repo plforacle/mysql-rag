@@ -28,6 +28,20 @@ In this lab, you will be guided through the following tasks:
     <copy>ssh -i private_key_file opc@new_compute_instance_ip</copy>
      ```
 
+2. Create applicationn folder: 
+
+      ```bash
+      <copy> cd /var/www/html</copy>
+      ``` 
+
+      ```bash
+      <copy> mkdir chatbot</copy>
+      ``` 
+
+      ```bash
+      <copy> cd chatbot</copy>
+      ``` 
+
 2. **Prompt 1: Basic Chat Interface (Full-Screen Version)** 
       Copy prompt to Claude.ai
 
