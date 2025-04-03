@@ -97,13 +97,19 @@ In this lab, you will be guided through the following tasks:
     <copy>sudo systemctl restart httpd</copy>
     ```
 
-2. Create test php file (info.php)
+2. Security update" set SELinux to allow Apache to connect to MySQL
+
+    ```bash
+    <copy> sudo setsebool -P httpd_can_network_connect 1 </copy>
+    ```
+
+3. Create test php file (info.php)
 
     ```bash
     <copy>sudo nano /var/www/html/info.php</copy>
     ```
 
-3. Add the following code to the editor and save the file (ctr + o) (ctl + x)
+4. Add the following code to the editor and save the file (ctr + o) (ctl + x)
 
     ```bash
     <copy><?php
@@ -111,97 +117,9 @@ In this lab, you will be guided through the following tasks:
     ?></copy>
     ```
 
-4. From your local machine, browse the page info.php
+5. From your local machine, browse the page info.php
 
    Example: http://129.213.167.../info.php
-
-## Task 3: Create MySQL / PHP connect app
-
-1. Security update" set SELinux to allow Apache to connect to MySQL
-
-    ```bash
-    <copy> sudo setsebool -P httpd_can_network_connect 1 </copy>
-    ```
-
-2. Create config.php
-
-    ```bash
-    <copy>cd /var/www/html</copy>
-    ```
-
-    ```bash
-    <copy>sudo nano config.php</copy>
-    ```
-
-3. Add the following code to the editor, change DB_PASSWORD, and save the file (ctr + o) (ctl + x)
-
-    ```bash
-    <copy>
-    <?php
-    // Database credentials
-    define('DB_SERVER', 'localhost');//
-    define('DB_USERNAME', 'admin');
-    define('DB_PASSWORD', 'Welco...');
-    define('DB_NAME', 'mysql');
-    //Attempt to connect to database
-    $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
-    // Check connection
-    if($link === false){
-        die("ERROR: Could not connect to the MySQL instance. " . mysqli_connect_error());
-    }
-    // Print host information
-    echo 'Successfully connected to the MySQL instance.';
-    echo 'Host info: ' . mysqli_get_host_info($link);
-    ?>
-    </copy>
-    ```
-
-    - Test Config.php on Web sever http://150.230..../config.php
-
-4. Create dbtest.php
-
-    ```bash
-    <copy>cd /var/www/html</copy>
-    ```
-
-    ```bash
-    <copy>sudo nano dbtest.php</copy>
-    ```
-
-5. Add the following code to the editor and save the file (ctr + o) (ctl + x)
-
-    ```bash
-    <copy>
-    <?php
-    require_once "config.php";
-    $query = "SELECT user FROM mysql.user;";
-    if ($stmt = $link->prepare($query)) {
-    $stmt->execute();
-    $stmt->bind_result($user);
-    echo "<table>";
-        echo "<tr>";
-        echo "<th>User</th>";
-    echo "</tr>";
-
-    while ($stmt->fetch()) {
-        echo "<tr>";
-        echo "<td>" . $user ."</td>";
-        echo "</tr>";
-    }
-
-    $stmt->close();
-    }
-    ?>
-    </copy>
-    ```
-
-6. From your local  machine connect to dbtest.php
-
-    Example: http://129.213.167..../dbtest.php  
-
-## Learn More
-
-- [Install Apache and PHP on an Oracle Linux Instance](https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/apache-on-oracle-linux/01-summary.htm)
 
 
 ## Acknowledgements
