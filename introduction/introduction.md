@@ -26,7 +26,20 @@ We'll break this workshop into manageable phases:
 2. Next, we'll create a RAG service using MySQL's vector capabilities
 3. Finally, we'll connect these components to create our intelligent movie assistant
 
-By the end of this session, you'll have a working application and the knowledge to apply these techniques to your own data and use cases. The skills you learn are directly applicable to business applications like customer support, documentation search, and personalized recommendations.
+### System Architecture Diagram
+
+![System Architecture](./images/rag-diagram.png "System Architecture")
+
+The architecture diagram illustrates the overall structure and data flow of the FilmRAG system, showing:
+
+1. The main components (Frontend, Backend, MySQL database, and OpenAI API)
+2. How these components interact with each other
+3. The detailed RAG pipeline workflow at the bottom
+4. The specific technologies used in each component
+5. The key MySQL vector functions being utilized
+
+
+After completing this workshop, you'll have a working application and the knowledge to apply these techniques to your own data and use cases. The skills you learn are directly applicable to business applications like customer support, documentation search, and personalized recommendations.
 
 Let's get started on our journey to building smarter, more context-aware AI applications!
 

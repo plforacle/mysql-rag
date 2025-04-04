@@ -456,7 +456,7 @@ In this lab, you will be guided through the following tasks:
       index.html - Add popup overlay and handling for About button
       styles.css - Styling for popup window
 
-      I want to improve this chatbot so when the About button is pressed a small window pops up with the centered text, "This Chatbot was created during the OraPub How-To Webinar in December of 2024!" How can I do this?
+      I want to improve this chatbot so when the About button is pressed a small window pops up with the centered text, "This Chatbot was created during the MySQL and HeatWave Summit in April 2025!" How can I do this?
 
       </copy>```
 
