@@ -235,14 +235,37 @@ In this lab, you will be guided through the following tasks:
       The goal is to make the chatbot feel more natural by remembering previous interactions until the user explicitly starts a new chat.
       </copy>```
 
-2. Copy generated files to LAMP folder
 
-3. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
+2. Replace chat\_handler.php file with new content in  "chatbot" folder
+
+      - Delete all content
+      ```bash
+      <copy> sudo rm chat_handler.php</copy>
+      ```
+      - Replace all content
+      ```bash
+      <copy> sudo nano chat_handler.php</copy>
+      ```
+
+3. Replace index.html file with new content in  "chatbot" folder
+
+      - Delete all content
+      ```bash
+      <copy> sudo rm index.html</copy>
+      ```
+      - Replace all content
+      ```bash
+      <copy> sudo nano index.html</copy>
+      ```
+
+4. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
+   ![Chatbot SQL](./images/chatbot-sql.png "Chatbot SQL")
 
    **TESTING:**
    - I am Captain Craig.
    - I want to sail very far away from here! Will you join me?
-   - Please gene rate a multiline SQL statement.
+   - Do you remember my name?
+   - Please generate a multiline SQL statement.
 
 ## Task 5: Add Text Formatting Enhancement
 
