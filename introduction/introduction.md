@@ -2,76 +2,55 @@
 
 ## About this Workshop
 
-Welcome to this comprehensive workshop on creating an AI-powered film information retrieval system! In this guide, you'll learn how to build a sophisticated chatbot that combines the power of large language models with MySQL's vector capabilities to deliver accurate, contextually relevant information about films.You will build a modern information retrieval system combining traditional databases with cutting-edge AI capabilities. By the end of this session, you'll understand how to create your own Retrieval Augmented Generation (RAG) systems using familiar LAMP stack technologies.
+### RAG-Enhanced Chatbot Workshop: Building Intelligent Applications with MySQL Vector Search
 
-### What We'll Cover 
+In this workshop, we'll explore the powerful combination of large language models, vector search, and relational databases to create a truly intelligent film recommendation application.
 
-FilmRAG represents a significant shift in how we think about database applications. Instead of simply storing and retrieving exact matches, this application understands the meaning behind user queries and returns semantically relevant information.
+### What You'll Learn
 
-Imagine a user asking "What are some good movies for a rainy Sunday afternoon?" A traditional database would struggle with this query, but FilmRAG can interpret the intent and provide contextually appropriate recommendations.
-
-In  our workshop, we'll:
-
-1. **Create the User Experience**: Develop a responsive chat interface for natural interaction
-2. **Explore the RAG Architecture**: Understand how Retrieval Augmented Generation works and why it's transforming information retrieval
-3. **Examine Vector Embeddings**: Learn how text is converted into mathematical representations that capture meaning
-4. **Implement MySQL Vector Functions**: See how MySQL Enterprise Edition supports vector operations without specialized databases
-5. **Build the Integration Layer**: Connect database retrieval with language models 
-
+During this workshop, you'll build a complete chatbot application that can answer detailed questions about movies by combining the Sakila film database with AI-powered language generation. We'll take a step-by-step approach, building each component independently before integrating them into a cohesive application.
 
 ### Why This Matters
 
-In today's information-rich environment, users expect systems to understand their intent, not just their exact words. Traditional keyword-based search is being rapidly replaced by semantic search that understands meaning.
+While large language models like GPT-4 are impressive, they have limitations - they can't access your specific data and sometimes generate incorrect information. RAG solves this problem by retrieving relevant facts from your database before generating responses, giving you:
 
-FilmRAG demonstrates:
-- How to leverage existing database investments for AI applications
-- Creating factually grounded responses that avoid hallucinations
-- Building conversational interfaces to structured data
-- Implementing vector search without complex infrastructure
+- More accurate and reliable answers
+- Responses based on your actual data
+- Control over information sources
+- Lower costs by using smaller models effectively
 
-### Workshop Format
+### Our Approach
 
-This will be hands-on! We'll be:
-- Walking through the codebase component by component
-- Making modifications to understand core concepts
-- Testing different query types and observing the results
-- Discussing implementation strategies for your own projects
+We'll break this workshop into manageable phases:
+1. First, we'll build a standalone chatbot with a terminal-themed interface
+2. Next, we'll create a RAG service using MySQL's vector capabilities
+3. Finally, we'll connect these components to create our intelligent movie assistant
 
-### What You Need
+By the end of this session, you'll have a working application and the knowledge to apply these techniques to your own data and use cases. The skills you learn are directly applicable to business applications like customer support, documentation search, and personalized recommendations.
 
-To follow along, you should have:
-- A basic understanding of the LAMP stack (Linux, Apache, MySQL, PHP)
-- Familiarity with API calls and JSON processing
-- A curious mind and questions ready
-
-### The Big Picture
-
-What makes FilmRAG special is that it bridges the gap between traditional database applications and modern AI capabilities. We're not replacing databases with AI - we're enhancing databases with semantic understanding while maintaining their reliability and specificity.
-
-By the end of this workshop, you'll understand how to implement these same principles in your own domain, whether that's e-commerce product search, knowledge base enhancements, or content recommendation systems.
-
-Let's get started by examining the core components of our application and how they work together to create an intelligent film information system!
+Let's get started on our journey to building smarter, more context-aware AI applications!
 
 _Estimated Workshop Time:_ 90 minutes
 
 ## About Product/Technology
 
-MySQL Enterprise Edition is a comprehensive database solution that offers advanced features for building scalable, secure, and highly available applications. Its key benefits include:
+MySQL Enterprise Edition is a comprehensive database solution with these key features:
 
-- High performance and scalability
-- Advanced security features
-- Reliability and uptime
-- Simplified database administration
-- 24/7 support and services
-- Cost-effectiveness
-- Compatibility with other tools and technologies
+- High performance and scalability for handling demanding workloads
+- Advanced security features to protect sensitive data
+- Reliability and high availability capabilities
+- Simplified database administration tools
+- 24/7 professional support services
+- Cost-effective compared to alternative solutions
+- Compatibility with various tools and technologies
 - Support for JavaScript stored programs
 
-MySQL Enterprise Edition is widely used in various industries, including web and mobile applications, e-commerce, financial services, healthcare, and government. Its popularity stems from its ability to provide high-performance, secure, and scalable database solutions that meet the needs of developers and organizations.
+The solution is widely used across multiple industries including web/mobile applications, e-commerce, financial services, healthcare, and government sectors. Its popularity comes from delivering secure, high-performance, and scalable database capabilities that meet diverse organizational needs.
 
-To access the full range of MySQL Enterprise Edition features for free while learning, developing, and prototyping, you can download the MySQL Enterprise Edition software directly from Oracle's Technology Network (OTN) website at: https://www.oracle.com/mysql/technologies/mysql-enterprise-edition-downloads.html. This allows you to utilize all the advanced features without needing a commercial license during the development and testing phase. 
+You can access MySQL Enterprise Edition for free during learning, development, and prototyping by downloading it from Oracle's Technology Network at: https://www.oracle.com/mysql/technologies/mysql-enterprise-edition-downloads.html. 
 
-If you want to use MySQL Enterprise Edition in a production environment, you will need to purchase a commercial license. To Buy MySQL Products and Services go to: https://www.mysql.com/buy-mysql/ 
+For production use, a commercial license must be purchased through MySQL's website: https://www.mysql.com/buy-mysql/.
+
 
 ## Objectives
 
