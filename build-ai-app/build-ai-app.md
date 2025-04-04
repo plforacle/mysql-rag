@@ -182,4 +182,4 @@ The beauty of this application is that it implements a sophisticated RAG system 
 
 - **Author** - Craig Shallahamer, Applied AI Scientist, Viscosity North America
 - **Contributor** - Perside Foster, MySQL Solution Engineering 
-- **Last Updated By/Date** - Craig Shallahamer, Applied AI Scientist, Viscosity North America, April 2025
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering , April 2025
