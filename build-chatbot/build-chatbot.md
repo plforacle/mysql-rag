@@ -35,14 +35,14 @@ In this lab, you will be guided through the following tasks:
       ``` 
 
       ```bash
-      <copy> mkdir chatbot</copy>
+      <copy> sudo mkdir chatbot</copy>
       ``` 
 
       ```bash
       <copy> cd chatbot</copy>
       ``` 
 
-2. **Prompt 1: Basic Chat Interface (Full-Screen Version)** 
+3. **Prompt 1: Basic Chat Interface (Full-Screen Version)** 
       Copy prompt to Claude.ai
 
       ```bash
@@ -72,9 +72,23 @@ In this lab, you will be guided through the following tasks:
 
       </copy> ```
 
-3. Copy generated files to LAMP folder
+   ![Chat generated file](./images/claude-ai.png "Chat generated file")
 
-4. From your local machine browser, test the Application Example: http://129.213.167.../info.php
+4. Copy generated index.html file to "chatbot"" folder
+
+    ```bash
+    <copy> sudo nano index.html</copy>
+    ```  
+
+5. Copy generated styles.css file to "chatbot"" folder
+
+    ```bash
+    <copy> sudo nano styles.css</copy>
+    ```  
+
+6. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
+
+   ![Chatbot App](./images/chatbot-app.png "Chatbot App")
 
 ## Task 2: Add Multiline Input Enhancement
 
