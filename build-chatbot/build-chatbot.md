@@ -105,9 +105,31 @@ In this lab, you will be guided through the following tasks:
       Please enhance the chatbot so the user has the ability to enter multiple lines, such as three lines, instead of just one. Is this possible?
       </copy>``` 
 
-2. Copy generated files to LAMP folder
+2. Replace index.html file with new content in  "chatbot"" folder
 
-3. From your local machine browser, test the Application Example: http://129.213.167.../info.php
+      - Delete all content
+      ```bash
+      <copy> sudo rm index.html</copy>
+      ```
+      - Replace all content
+      ```bash
+      <copy> sudo nano index.html</copy>
+      ```
+
+
+3. Replace styles.css file with new content in  "chatbot"" folder
+
+      - Delete all content
+      ```bash
+      <copy> sudo rm styles.css</copy>
+      ```
+      - Replace all content
+      ```bash
+      <copy> sudo nano styles.css</copy>
+      ```
+
+
+4. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
 
 ## Task 3: Add LLM Integration
 
@@ -142,7 +164,7 @@ In this lab, you will be guided through the following tasks:
 
 2. Copy generated files to LAMP folder
 
-3. From your local machine browser, test the Application Example: http://129.213.167.../info.php 
+3. From your local machine browser, test the Application Example: http://129.213.167.../chatbot 
 
    **TESTING:**  
    - I am Captain Craig.
@@ -183,7 +205,7 @@ In this lab, you will be guided through the following tasks:
 
 2. Copy generated files to LAMP folder
 
-3. From your local machine browser, test the Application Example: http://129.213.167.../info.php
+3. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
 
    **TESTING:**
    - I am Captain Craig.
@@ -243,7 +265,7 @@ In this lab, you will be guided through the following tasks:
 
 2. Copy generated files to LAMP folder
 
-3. From your local machine browser, test the Application Example: http://129.213.167.../info.php
+3. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
 
    **TESTING**
    - I am Captain Craig. 
@@ -285,7 +307,7 @@ In this lab, you will be guided through the following tasks:
 
 2. Copy generated files to LAMP folder
 
-3. From your local machine browser, test the Application Example: http://129.213.167.../info.php
+3. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
 
    **TESTING**
    - Please generate a multiline SQL select statement that contains an error. do not explain the error, just show the SQL.
@@ -312,7 +334,7 @@ In this lab, you will be guided through the following tasks:
 
 2. Copy generated files to LAMP folder
 
-3. From your local machine browser, test the Application Example: http://129.213.167.../info.php
+3. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
 
 
 ## Task 8: Add Sample Prompts Feature
@@ -382,7 +404,7 @@ In this lab, you will be guided through the following tasks:
 
 2. Copy generated files to LAMP folder
 
-3. From your local machine browser, test the Application Example: http://129.213.167.../info.php
+3. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
 
 You may now **proceed to the next lab**
 
