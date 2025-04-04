@@ -105,7 +105,7 @@ In this lab, you will be guided through the following tasks:
       Please enhance the chatbot so the user has the ability to enter multiple lines, such as three lines, instead of just one. Is this possible?
       </copy>``` 
 
-2. Replace index.html file with new content in  "chatbot"" folder
+2. Replace index.html file with new content in  "chatbot" folder
 
       - Delete all content
       ```bash
@@ -117,7 +117,7 @@ In this lab, you will be guided through the following tasks:
       ```
 
 
-3. Replace styles.css file with new content in  "chatbot"" folder
+3. Replace styles.css file with new content in  "chatbot" folder
 
       - Delete all content
       ```bash
@@ -162,9 +162,41 @@ In this lab, you will be guided through the following tasks:
       Respond with each web app file briefly explaining its function.
       </copy>```
 
-2. Copy generated files to LAMP folder
+2. Copy generated api\_key.php file to "chatbot"" folder **and Replace "YOUR\_OPENAI\_API_KEY\_HERE" with your actual API key**
 
-3. From your local machine browser, test the Application Example: http://129.213.167.../chatbot 
+    ```bash
+    <copy> sudo nano api_key.php</copy>
+    ```  
+
+3. Copy generated chat\_handler.php file to "chatbot"" folder
+
+    ```bash
+    <copy> sudo nano chat_handler.php</copy>
+    ```  
+
+4. Replace index.html file with new content in  "chatbot" folder
+
+      - Delete all content
+      ```bash
+      <copy> sudo rm index.html</copy>
+      ```
+      - Replace all content
+      ```bash
+      <copy> sudo nano index.html</copy>
+      ```
+
+5. Replace styles.css file with new content in  "chatbot" folder
+
+      - Delete all content
+      ```bash
+      <copy> sudo rm styles.css</copy>
+      ```
+      - Replace all content
+      ```bash
+      <copy> sudo nano styles.css</copy>
+      ```
+
+6. From your local machine browser, test the Application Example: http://129.213.167.../chatbot 
 
    **TESTING:**  
    - I am Captain Craig.
