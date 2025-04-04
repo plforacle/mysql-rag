@@ -56,7 +56,7 @@ MySQL Enterprise Edition is a comprehensive database solution with these key fea
 - 24/7 professional support services
 - Cost-effective compared to alternative solutions
 - Compatibility with various tools and technologies
-- Support for JavaScript stored programs
+- Support for JavaScript stored programs, and Vector Type functions
 
 The solution is widely used across multiple industries including web/mobile applications, e-commerce, financial services, healthcare, and government sectors. Its popularity comes from delivering secure, high-performance, and scalable database capabilities that meet diverse organizational needs.
 
