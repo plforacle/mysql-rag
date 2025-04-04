@@ -318,9 +318,41 @@ In this lab, you will be guided through the following tasks:
 
       </copy>``` 
 
-2. Copy generated files to LAMP folder
+2. Replace index.html file with new content in  "chatbot" folder
 
-3. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
+      - Delete all content
+      ```bash
+      <copy> sudo rm index.html</copy>
+      ```
+      - Replace all content
+      ```bash
+      <copy> sudo nano index.html</copy>
+      ```
+
+3. Replace styles.css file with new content in  "chatbot" folder
+
+      - Delete all content
+      ```bash
+      <copy> sudo rm styles.css</copy>
+      ```
+      - Replace all content
+      ```bash
+      <copy> sudo nano styles.css</copy>
+      ```
+
+4. Replace chat\_handler.php file with new content in  "chatbot" folder
+
+      - Delete all content
+      ```bash
+      <copy> sudo rm chat_handler.php</copy>
+      ```
+      - Replace all content
+      ```bash
+      <copy> sudo nano chat_handler.php</copy>
+      ```
+
+5. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
+   ![Chatbot SQL Multi Line](./images/chatbot-sql-multi.png "Chatbot SQL Multi Line")
 
    **TESTING**
    - I am Captain Craig. 
