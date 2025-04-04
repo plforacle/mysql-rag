@@ -84,7 +84,7 @@ The PHP implementation handles several responsibilities:
 The application uses MySQL Enterprise Edition with vector capabilities:
 - Uses the Sakila sample database with modifications
 - Extends the film table with a VECTOR column type
-- Leverages MySQL functions like STRING_TO_VECTOR and VECTOR_TO_STRING
+- Leverages MySQL functions like `STRING_TO_VECTOR` and `VECTOR_TO_STRING`
 
 
 ### The RAG Pipeline Flow
@@ -175,8 +175,8 @@ The beauty of this application is that it implements a sophisticated RAG system 
 
 ## Learn More
 
-- [Install Apache and PHP on an Oracle Linux Instance](https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/apache-on-oracle-linux/01-summary.htm)
-
+- [MySQL Vector Functions](https://dev.mysql.com/doc/refman/9.2/en/vector-functions.html)
+- [MySQL Vector Datatype: create your operations](https://blogs.oracle.com/mysql/post/mysql-vector-datatype-create-your-operations-part-1)
 
 ## Acknowledgements
 

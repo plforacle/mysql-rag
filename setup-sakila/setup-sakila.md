@@ -123,6 +123,10 @@ This lab assumes you have:
 
 You may now **proceed to the next lab**
 
+## Learn More
+
+- [Sakila Sample Database](https://dev.mysql.com/doc/sakila/en/sakila-introduction.html)
+
 ## Acknowledgements
 
 - **Author** - Craig Shallahamer, Applied AI Scientist, Viscosity North America
