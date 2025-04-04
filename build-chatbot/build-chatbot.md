@@ -1,8 +1,21 @@
-# Build AI Chatbot Web App - Complete Prompts Collection
+# Build Your Own AI Chatbot
 
 ## Introduction
 
-This lab contains all the standardized prompts for building the AI Chatbot web application step by step. These prompts have been carefully formatted to ensure consistent execution across different AI sessions.
+In this lab, you will create a fully functional AI chatbot from the ground up through a series of guided, incremental steps. Rather than overwhelming you with a complete codebase at once, you will build feature by feature, ensuring you understand each component before moving forward.
+
+Starting with a basic interface, you will progressively enhance your application to include:
+
+1. A responsive dark-mode UI with customizable styling
+2. Multiline text input capabilities
+3. Integration with OpenAI's powerful language models
+4. Conversation memory to maintain context between messages
+5. Markdown parsing and code syntax highlighting
+6. User-friendly features like code copying and sample prompts
+
+This approach mirrors professional development practices, allowing you to troubleshoot effectively and understand how the different technologies (HTML, CSS, JavaScript, PHP, and APIs) work together. By the end of the lab, you will have both a working chatbot and the knowledge to customize it further for your specific needs.
+
+Whether you are new to web development or looking to enhance your skills with AI integration, this step-by-step process provides practical experience that can be applied to countless other projects.
 
 _Estimated Lab Time:_ 20 minutes
 
@@ -10,14 +23,19 @@ _Estimated Lab Time:_ 20 minutes
 
 In this lab, you will be guided through the following tasks:
 
-- Execute the prompts to build the application 
+- Execute each prompt to build the application
+- Test each task before moving to the next one.
 
 
 ### Prerequisites
 
 - An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL SQL and  PHP
 - Completed Lab 2
+- Access to claude.ai
+- Apache Web server with PHP 8.2+
+- Access to Claude 3.7 Sonnet Chat  
+- Access to OpenAI API plus API key for 'gpt-4o-mini'  AI model
+- Basic understanding of HTML, CSS, JavaScript and PHP
 
 
 ## Task 1: Build Basic Chat Interface (Full-Screen Version)
