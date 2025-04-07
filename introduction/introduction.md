@@ -22,9 +22,11 @@ While large language models like GPT-4 are impressive, they have limitations - t
 ### Our Approach
 
 We'll break this workshop into manageable phases:
+
 1. First, we'll build a standalone chatbot with a terminal-themed interface
-2. Next, we'll create a RAG service using MySQL's vector capabilities
-3. Finally, we'll connect these components to create our intelligent movie assistant
+2. Next, we'll install MySQL Enterprise Edition, sample database, and its vector capabilities.
+3. Finally, we'll deploy an application made up of a RAG service using MySQL's vector capabilities that is connected to the chatbot to create our intelligent movie assistant.
+
 
 ### System Architecture Diagram
 
@@ -73,7 +75,7 @@ Lab 2: Build and Test Apache / PHP Installation
 Lab 3: Build Chatbot Application
 Lab 4: Install Enterprise Edition
 Lab 5: Setup Sakila Sample Database and configure Vector datatype
-Lab 6: Build MySQL Vector AI Application
+Lab 6: Build and MySQL Vector AI Application
 
 You may now **proceed to the next lab**
 
