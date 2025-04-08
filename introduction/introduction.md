@@ -30,7 +30,7 @@ We'll break this workshop into manageable phases:
 
 ### System Architecture Diagram
 
-![System Architecture](./images/rag-diagram.png "System Architecture")
+![System Architecture](./images/rag-diagram-pipe.png "System Architecture")
 
 The architecture diagram illustrates the overall structure and data flow of the FilmRAG system, showing:
 

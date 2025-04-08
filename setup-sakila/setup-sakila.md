@@ -93,9 +93,19 @@ This lab assumes you have:
     <copy>show tables;</copy>
     ```
 
-3. Here is the ERD (Entity Relationship Diagram) of the Sakila Database.
+3. Here is a simplified ERD (Entity Relationship Diagram) of the Sakila Database. It includes six main tables:
 
-    ![Sakila ERD](./images/sakila-erd.png "Sakila ERD")
+    - CUSTOMER - Stores basic customer information
+    - RENTAL - Tracks when customers rent films
+    - PAYMENT - Records customer payments for rentals
+    - INVENTORY - Represents physical copies of films available in stores
+    - **FILM - Contains information about the movies themselves (focus table)**
+    - STORE - Represents the physical store locations
+
+
+    ![Sakila ERD](./images/sakila-erd-simple.png "Sakila ERD")
+
+
 
 4. List data from the film table
 
