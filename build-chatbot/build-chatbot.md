@@ -17,7 +17,7 @@ This approach mirrors professional development practices, allowing you to troubl
 
 Whether you are new to web development or looking to enhance your skills with AI integration, this step-by-step process provides practical experience that can be applied to countless other projects.
 
-_Estimated Lab Time:_ 20 minutes
+_Estimated Lab Time:_ 30 minutes
 
 ### Objectives
 
@@ -164,6 +164,7 @@ In this lab, you will be guided through the following tasks:
 
       This step focuses on enhancing the existing code base enabling an LLM to respond and display its response.
       Maintain the full-screen visual design established in Step 1 by ensuring all container elements use 100% width.
+      Have the LLM talk like a Pirate. Do not forget that the initial AI greeting also must talk like a Pirate.
 
       Use the OpenAI 'gpt-4o-mini' model.
       The OpenAI API key needs to be stored in a separate file. I am aware of the security risk, but do this anyway.
