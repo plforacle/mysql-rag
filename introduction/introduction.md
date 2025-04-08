@@ -2,13 +2,13 @@
 
 ## About this Workshop
 
-### RAG-Enhanced Chatbot Workshop: Building Intelligent Applications with MySQL Vector Search
+### RAG-Enhanced Chatbot Workshop: Building Intelligent Applications with MySQL on-prem Vector Search
 
-In this workshop, we'll explore the powerful combination of large language models, vector search, and relational databases to create a truly intelligent film recommendation application.
+In this workshop, we'll explore the powerful combination of large language models, vector search, and relational databases to create a truly intelligent film recommendation application. We'll be working with a MySQL on-premise database, showing how this traditional relational system can be transformed into an AI-powered recommendation engine that understands not just what films people like, but why they like them.
 
 ### What You'll Learn
 
-During this workshop, you'll build a complete chatbot application that can answer detailed questions about movies by combining the Sakila film database with AI-powered language generation. We'll take a step-by-step approach, building each component independently before integrating them into a cohesive application.
+During this workshop, you'll build a complete application that can answer detailed questions about movies by combining the Sakila film database with AI-powered language generation. We'll start by building a standalone chatbot using Claude 3.7 Sonnet as our AI assistant, providing it with predefined prompts to generate the chatbot code based on our specifications. You'll get hands-on experience setting up RAG with MySQL's vector capabilities, and we'll leverage preexisting code to quickly deploy and test the finished application.
 
 ### Why This Matters
 
