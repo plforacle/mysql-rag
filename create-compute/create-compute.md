@@ -212,6 +212,12 @@ You need a compute instance to connect to perform the database and application t
 
      ![Save SSH keys](./images/ssh-key-store.png "Save SSH Keys")
 
+    > **Note:**   For linux and Mac terminals, make sure to asign the right permissions to your key, use:
+
+    ```bash
+        <copy>chmod 600 ssh-key-2024</copy>
+    ```
+
 11. Click '**Create**' to create your compute instance.
 
 12. The compute instance will be ready to use after a few minutes. The state is shown as **Provisioning** while the instance is creating.
