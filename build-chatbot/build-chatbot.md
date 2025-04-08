@@ -2,13 +2,17 @@
 
 ## Introduction
 
-In this lab, you will create a fully functional AI chatbot from the ground up through a series of guided, incremental steps. Rather than overwhelming you with a complete codebase at once, you will build feature by feature, ensuring you understand each component before moving forward.
+In this lab, you will be building the chatbot portion of the final RAG application. We'll explore the new world of AI assistance, experiencing collaboration with an AI towards a common goal. Rather than static, one-off instructions given to Claude 3.7 Sonnet, we'll begin to think of the AI as a working companion, empowering you to accomplish things you couldn't achieve before.
+
+We will use Claude 3.7 Sonnet to assist us in building the web app through conversational and iterative prompting. We will collaborate with Claude to handle all the PHP, CSS, HTML, and JavaScript coding. In one window, we'll work with Claude as our coding assistant, in another, we'll work with the code (there isn't much code), and in a third window, we'll run our web app.
+
+We'll start by designing the general web app UI, then move on to integrating an LLM for AI responses, adding conversation memory, buttons and modals, and formatting for various types of text. We'll even experiment with fun features, like incorporating a Pirate personality. By the end, our web app will be robust, engaging, and ready for collaborative interactions.
 
 Starting with a basic interface, you will progressively enhance your application to include:
 
 1. A responsive dark-mode UI with customizable styling
 2. Multiline text input capabilities
-3. Integration with OpenAI's powerful language models
+3. Integration with OpenAI's API powerful language models
 4. Conversation memory to maintain context between messages
 5. Markdown parsing and code syntax highlighting
 6. User-friendly features like code copying and sample prompts
@@ -288,7 +292,7 @@ In this lab, you will be guided through the following tasks:
 
 ## Task 5: Add Text Formatting Enhancement
 
-1. **Prompt 5: Prompt 5: Text Formatting Enhancement**
+1. **Prompt 5: Text Formatting Enhancement**
       Copy prompt to Claude.ai
 
       ```bash
@@ -390,6 +394,7 @@ In this lab, you will be guided through the following tasks:
       Files Modified:
       index.html  
       styles.css  
+      
       Generate code to enhance the chatbot with a convenient way to copy code snippets by adding a pirate-themed copy button to code blocks that works in both secure (HTTPS) and non-secure (HTTP) environments.
 
       Requirements:
