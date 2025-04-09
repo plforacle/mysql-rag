@@ -6,7 +6,7 @@ In this lab, you will be building the chatbot portion of the final RAG applicati
 
 We will use Claude 3.7 Sonnet to assist us in building the web app through conversational and iterative prompting. We will collaborate with Claude to handle all the PHP, CSS, HTML, and JavaScript coding. In one window, we'll work with Claude as our coding assistant, in another, we'll work with the code (there isn't much code), and in a third window, we'll run our web app.
 
-We'll start by designing the general web app UI, then move on to integrating an LLM for AI responses, adding conversation memory, buttons and modals, and formatting for various types of text. We'll even experiment with fun features, like incorporating a Pirate personality. By the end, our web app will be robust, engaging, and ready for collaborative interactions.
+We'll start by designing the general web app UI, then move on to integrating an OpenAI LLM for AI responses, adding conversation memory, buttons and modals, and formatting for various types of text. We'll even experiment with fun features, like incorporating a Pirate personality. By the end, our web app will be robust, engaging, and ready for collaborative interactions.
 
 Starting with a basic interface, you will progressively enhance your application to include:
 
@@ -112,6 +112,10 @@ In this lab, you will be guided through the following tasks:
 
    ![Chatbot App](./images/chatbot-app.png "Chatbot App")
 
+   **TESTING:**  
+   - I am Captain Craig.
+   - Hit Send (No response)
+
 ## Task 2: Add Multiline Input Enhancement
 
 1. **Prompt 2: Multiline Input Enhancement**
@@ -138,7 +142,6 @@ In this lab, you will be guided through the following tasks:
       <copy> sudo nano index.html</copy>
       ```
 
-
 3. Replace styles.css file with new content in  "chatbot" folder
 
       - Delete all content
@@ -152,6 +155,12 @@ In this lab, you will be guided through the following tasks:
 
 
 4. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
+
+   **TESTING:**  
+   - I am Captain Craig.
+   - Hit "Shift + Enter" 
+   - Do you remember my name?
+   - Hit Send (No response)
 
 ## Task 3: Add LLM Integration
 

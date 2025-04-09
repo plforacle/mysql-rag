@@ -24,26 +24,25 @@ In this lab, you will be guided through the following tasks:
 - Some Experience with MySQL SQL and  PHP
 - Completed Lab 5
 
-
-## Application Overview
+### Application Overview
 
 This is a film information chatbot built entirely on the LAMP stack (Linux, Apache, MySQL, PHP) that implements a Retrieval Augmented Generation (RAG) pipeline. What makes it special is that it leverages MySQL's vector capabilities for semantic search rather than requiring additional vector databases like Pinecone or Milvus.
 
 ### Directory Structure
 
-```
-my-web-app
-├── chatbot
-│   ├── api_key.php          # Stores OpenAI API key
-│   ├── chat_handler.php     # Processes chat interactions
-│   ├── index.html           # Frontend UI
-│   └── styles.css           # CSS styling
-└── rag_service
-    ├── db_config.php        # Database connection configuration
-    ├── film_search.php      # Film search utilities
-    ├── generate_embeddings.php  # Generates vector embeddings
-    ├── rag_api.php          # Main RAG implementation
-    └── vector_functions.php  # Vector similarity functions
+```markdown
+    my-web-app
+    ├── chatbot
+    │   ├── api_key.php          # Stores OpenAI API key
+    │   ├── chat_handler.php     # Processes chat interactions
+    │   ├── index.html           # Frontend UI
+    │   └── styles.css           # CSS styling
+    └── rag_service
+        ├── db_config.php        # Database connection configuration
+        ├── film_search.php      # Film search utilities
+        ├── generate_embeddings.php  # Generates vector embeddings
+        ├── rag_api.php          # Main RAG implementation
+        └── vector_functions.php # Vector similarity functions
 ```
 
 ### Technical Components
@@ -51,6 +50,7 @@ my-web-app
 #### 1. Frontend (HTML/CSS/JS)
 
 The frontend is built with standard web technologies:
+
 - HTML5 structure with flex layout
 - CSS3 for styling with variables and modern selectors
 - jQuery for AJAX calls and DOM manipulation
@@ -58,6 +58,7 @@ The frontend is built with standard web technologies:
 - Syntax highlighting with Prism.js
 
 Key JavaScript functionality:
+
 - AJAX calls to the PHP backend
 - Chat history management
 - Markdown processing
@@ -68,12 +69,14 @@ Key JavaScript functionality:
 The PHP implementation handles several responsibilities:
 
 **Chat Handler (`chat_handler.php`):**
+
 - Session management for chat history
-- Communication with OpenAI's API 
+- Communication with OpenAI's API
 - Integration with the RAG service
 - Request/response handling
 
 **RAG Service:**
+
 - Vector embedding generation via OpenAI
 - MySQL vector operations
 - Similarity calculations
@@ -82,10 +85,10 @@ The PHP implementation handles several responsibilities:
 #### 3. Database (MySQL)
 
 The application uses MySQL Enterprise Edition with vector capabilities:
+
 - Uses the Sakila sample database with modifications
 - Extends the film table with a VECTOR column type
 - Leverages MySQL functions like `STRING_TO_VECTOR` and `VECTOR_TO_STRING`
-
 
 ### The RAG Pipeline Flow
 
@@ -130,7 +133,6 @@ To adapt this for your own projects:
 
 The beauty of this application is that it implements a sophisticated RAG system entirely within the LAMP stack, leveraging the powerful vector capabilities of MySQL Enterprise Edition without requiring additional specialized databases or services.
 
-
 ## Task 1: Deploy MySQL Chatbot / RAG Application  
 
 1. Go to the development folder
@@ -138,7 +140,6 @@ The beauty of this application is that it implements a sophisticated RAG system 
     ```bash
     <copy>cd /var/www/html</copy>
     ```
-
 
 2. Download application code
 
@@ -166,12 +167,11 @@ The beauty of this application is that it implements a sophisticated RAG system 
 
 6. Run the application as follows (Use your coupute IP address):
 
-    http://127.0.0.../my-web-ap/
+    <http://127.0.0.../my-web-ap/>
 
     ![MySQL Rag App](./images/my-web-app.png "MySQL Rag App")
 
-7. Test the application by clicking the "Sample Prompts" menu. Select a prompt and hit *Send*
-
+7. Test the application by clicking the "Sample Prompts" menu. Select a prompt and hit _Send_
 
 ## Learn More
 
@@ -181,5 +181,5 @@ The beauty of this application is that it implements a sophisticated RAG system 
 ## Acknowledgements
 
 - **Author** - Craig Shallahamer, Applied AI Scientist, Viscosity North America
-- **Contributor** - Perside Foster, MySQL Solution Engineering 
+- **Contributor** - Perside Foster, MySQL Solution Engineering
 - **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering , April 2025
