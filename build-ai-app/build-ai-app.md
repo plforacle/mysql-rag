@@ -18,7 +18,8 @@ _Estimated Lab Time:_ 20 minutes
 
 In this lab, you will be guided through the following tasks:
 
-- Deploying and configuring  the The RAG application
+- Review the content of the application
+- Deploy and configur  the The RAG application
 - Generate the Film embedding content
 - Run and test the RAG application
 
@@ -28,7 +29,7 @@ In this lab, you will be guided through the following tasks:
 - Some Experience with MySQL SQL and  PHP
 - Completed Lab 5
 
-### Application Overview
+## Application Overview
 
 This is a film information chatbot built entirely on the LAMP stack (Linux, Apache, MySQL, PHP) that implements a Retrieval Augmented Generation (RAG) pipeline. What makes it special is that it leverages MySQL's vector capabilities for semantic search rather than requiring additional vector databases like Pinecone or Milvus.
 
@@ -94,6 +95,40 @@ The application uses MySQL Enterprise Edition with vector capabilities:
 - Extends the film table with a VECTOR column type
 - Leverages MySQL functions like `STRING_TO_VECTOR` and `VECTOR_TO_STRING`
 
+### Vector Embeddings Generation
+
+The primary file responsible for this is `generate_embeddings.php` in the `rag_service` directory. The embedding generation process works as follows:
+
+1. **Database Connection**: The script first connects to the MySQL database using the connection details from `db_config.php`.
+
+2. **Film Selection**: It queries the database for films that don't yet have embeddings (where `vector_embedding IS NULL`), limiting to 200 films at a time to manage processing load.
+
+3. **Text Representation**: For each film, the script creates a comprehensive text representation using the `create_film_text()` function, which combines:
+   - Film title
+   - Description
+   - Release year
+   - Rating
+   - Categories
+   - Additional semantic information about audience suitability (e.g., whether it's family-friendly)
+
+4. **OpenAI API Call**: The script sends this text representation to OpenAI's embedding API using the `generate_embedding()` function from `vector_functions.php`. It specifically uses the `text-embedding-3-small` model.
+
+5. **Vector Storage**: Upon receiving the embedding (a vector of floating-point numbers), the script converts it to a string format and stores it in the database using MySQL's `STRING_TO_VECTOR` function:
+   ```php
+   $vector_str = "[" . implode(",", $embedding) . "]";
+   $stmt = $conn->prepare("
+       UPDATE film 
+       SET vector_embedding = STRING_TO_VECTOR(?)
+       WHERE film_id = ?
+   ");
+   ```
+
+6. **Rate Limiting**: The script includes a small delay between processing films to avoid hitting API rate limits.
+
+The embeddings serve as semantic representations of the films, capturing their meaning in a high-dimensional vector space. This allows the application to perform semantic searches later - when a user asks about a film, their query is also converted to an embedding, and the system finds films with similar embeddings, effectively matching based on meaning rather than just keywords.
+
+These embeddings power the RAG (Retrieval-Augmented Generation) system, which enhances the AI's responses with relevant information from the database, making it more accurate and informative when discussing films.
+
 ### The RAG Pipeline Flow
 
 From a developer perspective, here's the request flow:
@@ -137,7 +172,74 @@ To adapt this for your own projects:
 
 The beauty of this application is that it implements a sophisticated RAG system entirely within the LAMP stack, leveraging the powerful vector capabilities of MySQL Enterprise Edition without requiring additional specialized databases or services.
 
-## Task 1: Deploy MySQL Chatbot / RAG Application  
+
+## Task 1: View description of each file in the application structure  
+
+Here's a description of each file in the application structure:
+
+### `/chatbot` Directory
+
+1. **`api_key.php`**
+   - Contains the OpenAI API key storage
+   - Stores the key in a PHP variable for secure access across the application
+   - Protects the API key from being directly visible in client-side code
+
+2. **`chat_handler.php`**
+   - Main backend processing script that handles user chat interactions
+   - Manages communication between the frontend and OpenAI API
+   - Implements session management to maintain chat history
+   - Integrates with the RAG service to enhance responses with film information
+   - Formats and returns AI responses to the frontend
+
+3. **`index.html`**
+   - Main frontend interface of the chatbot application
+   - Provides the chat UI with message history display
+   - Includes interactive elements like the message input, send button, and menu options
+   - Contains JavaScript for handling user interactions and AJAX requests
+   - Implements markdown rendering and code syntax highlighting
+
+4. **`styles.css`**
+   - Contains CSS styling for the chatbot interface
+   - Implements the dark-themed, terminal-inspired UI
+   - Defines styling for chat messages, buttons, code blocks, and other UI elements
+   - Includes responsive design elements for various screen sizes
+
+### `/rag_service` Directory
+
+1. **`db_config.php`**
+   - Database configuration and connection management
+   - Contains credentials for connecting to the MySQL database
+   - Provides a function to establish a database connection
+   - Used by other RAG service scripts that need database access
+
+2. **`film_search.php`**
+   - Contains functions for identifying and processing film-related queries
+   - Implements film title extraction from natural language queries
+   - Provides functions to search for films by title or category
+   - Creates enhanced prompts with film information for the AI
+
+3. **`generate_embeddings.php`**
+   - Script for generating vector embeddings for films in the database
+   - Processes film data into text representations suitable for embedding
+   - Calls the OpenAI API to generate embeddings for each film
+   - Stores the embeddings in the MySQL database using VECTOR data type
+
+4. **`rag_api.php`**
+   - Main API endpoint for the RAG (Retrieval-Augmented Generation) service
+   - Handles vectorized search using MySQL's VECTOR capabilities
+   - Implements cosine similarity calculations for semantic search
+   - Processes user queries to retrieve relevant film information
+
+5. **`vector_functions.php`**
+   - Contains utility functions for vector operations
+   - Implements the VectorSimilarity class with cosine similarity calculations
+   - Provides functions for performing vector searches in the database
+   - Contains functions to generate embeddings using the OpenAI API
+
+This file structure separates the chatbot interface (in the `/chatbot` directory) from the retrieval mechanisms (in the `/rag_service` directory), creating a modular design that separates concerns and improves maintainability.
+
+
+## Task 2: Deploy MySQL Chatbot / RAG Application  
 
 1. Go to the development folder
 
@@ -173,22 +275,25 @@ The beauty of this application is that it implements a sophisticated RAG system 
 
     ![Config MySQL ](./images/db-config.png "Config MySQL")
 
-5. Run Script to generate film embeddings  
+
+## Task 3: Run and test  MySQL Chatbot / RAG Application 
+
+1. Run Script to generate film embeddings  
 
     ```bash
     <copy>php rag_service/generate_embeddings.php</copy>
     ```
 
-6. Run the application as follows (Use your conpute IP address):
+2. Run the application as follows (Use your conpute IP address):
 
     <http://158.10.../my-web-app/chatbot/>
 
     ![MySQL Rag App](./images/my-web-app.png "MySQL Rag App")
 
-7. Test the application by clicking the "Sample Prompts" menu. Select a prompt and hit _Send_
+3. Test the application by clicking the "Sample Prompts" menu. Select a prompt and hit _Send_
 
 
- 8. **My testing and have a little fun**
+4. **My testing and have a little fun**
 
       - What movie is about a battle between a cow and a waitress?
       - Tell me about the movie ALIEN CENTER?
