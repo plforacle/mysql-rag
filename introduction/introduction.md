@@ -45,7 +45,7 @@ After completing this workshop, you'll have a working application and the knowle
 
 Let's get started on our journey to building smarter, more context-aware AI applications!
 
-_Estimated Workshop Time:_ 90 minutes
+_Estimated Workshop Time:_ 120 minutes
 
 ## About Product/Technology
 
