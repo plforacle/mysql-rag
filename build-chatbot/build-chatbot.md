@@ -21,6 +21,8 @@ This approach mirrors professional development practices, allowing you to troubl
 
 Whether you are new to web development or looking to enhance your skills with AI integration, this step-by-step process provides practical experience that can be applied to countless other projects.
 
+**Note:** The application code in this lab is intended for educational purposes only. It is designed to help developers learn and practice application development skills. The code is not designed to be used in a production environment
+
 _Estimated Lab Time:_ 30 minutes
 
 ### Objectives
@@ -502,8 +504,6 @@ In this lab, you will be guided through the following tasks:
       ```
 
 4. From your local machine browser, test the Application Example: http://129.213.167.../chatbot
-
- **TESTING**
 
  - Click "About" button for simple popup window.
 

@@ -4,19 +4,23 @@
 
 MySQL Enterprise Edition integrates seamlessly with the LAMP (Linux, Apache, MySQL, PHP) stack, enhancing open-source capabilities with enterprise features. MySQL EE works with the LAMP stack by:
 
-After installing the LAMP Stack , you will Deploy and test the "Sakila Film Library with Time Converter" web application. This application displays the Sakila.Film data while providing a time conversion tool. Users can enter seconds and convert them to either HH:MM:SS format or written time descriptions using MySQL Enterprise Edition's JavaScript function. This LAMP-based application demonstrates practical use of database features within MySQL Enterprise Edition.
+- Storing and retrieveing  the Vector embeded film content in database.
+- Using secure PHP connections (PDO) 
+- Maintaining Apache/Linux compatibility
+
+In this lab you will deploy the FilmRAG application that was built based on Lab 3 and then modified to connect to the prebuilt RAG service using MySQL's vector capabilities and OpenAI models. 
 
 **Note:** The application code in this lab is intended for educational purposes only. It is designed to help developers learn and practice application development skills with MySQL Enterprise Edition. The code is not designed to be used in a production environment
 
-_Estimated Lab Time:_ 15 minutes
+_Estimated Lab Time:_ 20 minutes
 
 ### Objectives
 
 In this lab, you will be guided through the following tasks:
 
-- Install Apache and PHP
-- Learn to create PHP / MYSQL Connect Application
-- Deploy the Sample LAMP WEB Application
+- Deploying and configuring  the The RAG application
+- Generate the Film embedding content
+- Run and test the RAG application
 
 ### Prerequisites
 
@@ -154,10 +158,20 @@ The beauty of this application is that it implements a sophisticated RAG system 
     ```
 
     ```bash
-    <copy>cd my-web-ap</copy>
+    <copy>cd my-web-app</copy>
     ```
 
-4. Update db_config.php to add passowrd vaule
+4. Update file db_config.php to change the following vaules if needed
+    - 'host' => **'localhost'**,
+    - 'user' => **'admin'**,
+    - 'password' => **'Welcome1!**',
+    - 'database' => **'sakila**'
+
+    ```bash
+    <copy>sudo nano rag_service/db_config.php</copy>
+    ```
+
+    ![Config MySQL ](./images/db-config.png "Config MySQL")
 
 5. Run Script to generate film embeddings  
 
@@ -165,13 +179,24 @@ The beauty of this application is that it implements a sophisticated RAG system 
     <copy>php rag_service/generate_embeddings.php</copy>
     ```
 
-6. Run the application as follows (Use your coupute IP address):
+6. Run the application as follows (Use your conpute IP address):
 
-    <http://127.0.0.../my-web-ap/>
+    <http://158.10.../my-web-app/chatbot/>
 
     ![MySQL Rag App](./images/my-web-app.png "MySQL Rag App")
 
 7. Test the application by clicking the "Sample Prompts" menu. Select a prompt and hit _Send_
+
+
+ 8. **My testing and have a little fun**
+
+      - What movie is about a battle between a cow and a waitress?
+      - Tell me about the movie ALIEN CENTER?
+      - :new chat
+      - Tell me about the movie CHICAGO NOOOORTH?
+      - Tell me about the movie CHICAGO NORTH?
+      - :new chat
+      -Do you know when the movie Chicago N. was released?
 
 ## Learn More
 

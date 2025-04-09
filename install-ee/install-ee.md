@@ -4,7 +4,7 @@
 
 Developers can access the full range of MySQL Enterprise Edition features for free while learning, developing, and prototyping.You wil be using the latest available download  from Oracle Technical Resources (OTR, formerly Oracle Technology Network, OTN). For more details review the   [MySQL Enterprise Edition Downloads page](https://www.oracle.com/mysql/technologies/mysql-enterprise-edition-downloads.html)
 
-_Estimated Time:_ 10 minutes
+_Estimated Time:_ 20 minutes
 
 ### Objectives
 
@@ -140,7 +140,7 @@ This lab assumes you have:
     <copy>\status</copy>
     ```
 
-5. The root account can connect only locally, so we create now the 'admin'@'%' account that can connect remotely
+5. The root account **can connect only locally**, so we create now the 'admin'@'%' account that **can connect locally and remotely**
 
     ```bash
     <copy>CREATE USER 'admin'@'%' IDENTIFIED BY 'Welcome#123';</copy>
