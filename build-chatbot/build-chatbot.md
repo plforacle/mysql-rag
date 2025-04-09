@@ -235,6 +235,10 @@ In this lab, you will be guided through the following tasks:
    - I want to sail very far away from here! Will you join me?
    - Do you remember my name?
 
+      **NOTE - In case you see the following error 
+            " Sorry, there was an error processing your request. Please try again later. (Error: )"
+      - Review the api_key.php file and make sure you have entered the correct API key .
+
 ## Task 4: Add Conversation Memory
 
 1. **Prompt 4: Conversation Memory**
@@ -399,7 +403,7 @@ In this lab, you will be guided through the following tasks:
       Copy prompt to Claude.ai
 
       ```bash
-       <copy>Prompt 6: Code Copy Functionality with HTTP Fallback
+      <copy>Prompt 6: Code Copy Functionality with HTTP Fallback
       Files Modified:
       index.html  
       styles.css  
