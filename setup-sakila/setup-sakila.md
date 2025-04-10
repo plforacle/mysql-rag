@@ -122,7 +122,7 @@ This lab assumes you have:
 6. View the vector column of the film table
 
     ```bash
-    <copy>DESC film;</copy>
+    <copy>DESC film\G;</copy>
     ```
 
 7. Exit

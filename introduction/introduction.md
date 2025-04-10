@@ -66,7 +66,6 @@ You can access MySQL Enterprise Edition for free during learning, development, a
 
 For production use, a commercial license must be purchased through MySQL's website: https://www.mysql.com/buy-mysql/.
 
-
 ## Objectives
 
 In this lab, you will be guided through the following steps:
@@ -77,6 +76,12 @@ In this lab, you will be guided through the following steps:
 - Lab 4: Install Enterprise Edition
 - Lab 5: Setup Sakila Sample Database and configure Vector datatype
 - Lab 6: Build and MySQL Vector AI Application
+
+## Prerequisites
+
+- An Oracle Free Tier, Paid  Cloud Account
+- Claude 3.7 Sonnet Account -  AI assistant created by Anthropic
+- OpenAI API Account - For models interacction
 
 You may now **proceed to the next lab**
 

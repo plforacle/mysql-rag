@@ -50,7 +50,7 @@ This lab assumes you have:
     <copy>wget 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/_85tMv-_I0WRJRAuHI9StGHfo3WXtAsSbpslsOIqIu2hsHgmKc8n7zmhk-5KvVw8/n/idazzjlcjqzj/b/mysql-ee-downloads/o/Oracle%20Technical%20Resource(OTR)/mysql-enterprise-9.2.0_el8_x86_64_bundle.tar'</copy>
     ```
 
-5. Extract the contents of the "mysql-enterprise-9.2.0_el8_x86_64_bundle.tar" archive file
+5. Extract the contents of the `mysql-enterprise-9.2.0_el8_x86_64_bundle.tar` archive file
 
     ```bash
     <copy>tar xvf mysql-enterprise-9.2.0_el8_x86_64_bundle.tar</copy>

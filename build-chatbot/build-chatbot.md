@@ -36,13 +36,11 @@ In this lab, you will be guided through the following tasks:
 ### Prerequisites
 
 - An Oracle Trial or Paid Cloud Account
-- Completed Lab 2
-- Access to claude.ai
 - Apache Web server with PHP 8.2+
-- Access to Claude 3.7 Sonnet Chat  
-- Access to OpenAI API plus API key for 'gpt-4o-mini'  AI model
+- Access to Claude 3.7 Sonnet AI assistant  
+- Access to OpenAI API, plus API key for 'gpt-4o-mini'  AI model
 - Basic understanding of HTML, CSS, JavaScript and PHP
-
+- Completed Lab 2
 
 ## Task 1: Build Basic Chat Interface (Full-Screen Version)
 
