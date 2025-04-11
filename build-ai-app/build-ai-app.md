@@ -21,9 +21,10 @@ In this lab, you will be guided through the following tasks:
 - Understand the application
 - Review the application source files
 - Deploy and configure the RAG application
+- How to check for errors
 - Generate the Film embedding content
 - Run and test the RAG application
-- Check for errors
+
 
 ### Prerequisites
 
@@ -358,8 +359,34 @@ This file structure separates the chatbot interface (in the `/chatbot` directory
     $rag_api_url = 'http://your-server-ip/my-web-app/rag_service/rag_api.php';
     ```
 
+## Task 4: How to Check for Errors
 
-## Task 4: Run and test MySQL Chatbot / RAG Application 
+When running the FilmRAG application, you might need to check the PHP error logs to diagnose any issues. Here are some useful commands for error checking:
+
+1. View the most recent PHP errors in real-time:
+
+      ```bash
+      <copy>sudo tail -f /var/log/php-fpm/www-error.log</copy>
+      ```
+   This command will display new error messages as they occur, which is useful for debugging while actively using the application.
+
+2. Clear the error log if it becomes too large or cluttered:
+
+      ```bash
+      <copy>sudo truncate -s 0 /var/log/php-fpm/www-error.log</copy>
+      ```
+   This command will empty the error log file without deleting it, giving you a clean slate for new error messages.
+
+3. These commands are particularly helpful when:
+
+   - The application isn't responding as expected
+   - You're seeing blank pages or incomplete responses
+   - The RAG functionality isn't retrieving film information correctly
+   - There are issues with the OpenAI API connections
+
+The application is designed to log detailed error information, which can help identify issues with database connections, API calls, or vector operations.
+
+## Task 5: Run and test MySQL Chatbot / RAG Application 
 
 1. Run Script to generate film embeddings  
    Go to the Application folder
@@ -417,33 +444,6 @@ This file structure separates the chatbot interface (in the `/chatbot` directory
    - Natural language questions about films
 
 This hands-on experience demonstrates the power of combining MySQL's vector capabilities with an LLM for creating a domain-specific chatbot with improved accuracy and relevance.
-
-## Task 5: Error Checking
-
-When running the FilmRAG application, you might need to check the PHP error logs to diagnose any issues. Here are some useful commands for error checking:
-
-1. View the most recent PHP errors in real-time:
-
-      ```bash
-      <copy>sudo tail -f /var/log/php-fpm/www-error.log</copy>
-      ```
-   This command will display new error messages as they occur, which is useful for debugging while actively using the application.
-
-2. Clear the error log if it becomes too large or cluttered:
-
-      ```bash
-      <copy>sudo truncate -s 0 /var/log/php-fpm/www-error.log</copy>
-      ```
-   This command will empty the error log file without deleting it, giving you a clean slate for new error messages.
-
-3. These commands are particularly helpful when:
-
-   - The application isn't responding as expected
-   - You're seeing blank pages or incomplete responses
-   - The RAG functionality isn't retrieving film information correctly
-   - There are issues with the OpenAI API connections
-
-The application is designed to log detailed error information, which can help identify issues with database connections, API calls, or vector operations.
 
 ## Learn More
 
