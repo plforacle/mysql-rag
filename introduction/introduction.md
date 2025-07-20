@@ -70,12 +70,13 @@ For production use, a commercial license must be purchased through MySQL's websi
 
 In this lab, you will be guided through the following steps:
 
-- Lab 1: Create a Compute instance
-- Lab 2: Build and Test Apache / PHP Installation
-- Lab 3: Build Chatbot Application
-- Lab 4: Install Enterprise Edition
-- Lab 5: Setup Sakila Sample Database and configure Vector datatype
-- Lab 6: Build and MySQL Vector AI Application
+- Lab 1: Create a Virtual Cloud Network
+- Lab 2: Create a Compute instance
+- Lab 3: Build and Test Apache / PHP Installation
+- Lab 4: Build Chatbot Application
+- Lab 5: Install Enterprise Edition
+- Lab 6: Setup Sakila Sample Database and configure Vector datatype
+- Lab 7: Build and MySQL Vector AI Application
 
 ## Prerequisites
 
