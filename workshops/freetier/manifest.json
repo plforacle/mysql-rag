@@ -18,7 +18,7 @@
           "title": "Lab 1: Create the Virtual Cloud Network",
           "filename": "../../create-vcn/create-vcn.md"
         },
-        
+
         {
           "title": "Lab 2: Create a Compute instance ",
           "filename": "../../create-compute/create-compute.md"

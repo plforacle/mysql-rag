@@ -36,14 +36,14 @@ In this lab, you will be guided through the following tasks:
     ```bash
     <copy>mysql</copy>
     ```
-    
+
     **Description**:
 
     ```bash
     <copy>Compartment for mysql</copy>
     ```
 
-5. Click **Create Compartment**.
+4. Click **Create Compartment**.
 
     ![Create a compartment](./images/2-create-compartment.png "Create a compartment")
 
@@ -93,9 +93,9 @@ In this lab, you will be guided through the following tasks:
 
     ![Select security lists](./images/11-select-security-list.png "Select security lists")
 
-4. On the **security list for private subnet-mysql-vcn** page, click **Ingress Rules**
+4. On the **security list for private subnet-mysql-vcn** page, click **Security rules**
 
-    ![Add ingress rules](./images/12-select-security-rules.png "Add ingress rules")
+    ![Add Security rules](./images/12-select-security-rules.png "Add Security rules")
 
 5. On the **security list for private subnet-mysql-vcn** page, under **Ingress Rules**, click **Add Ingress Rules**.
 

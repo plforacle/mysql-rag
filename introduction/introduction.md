@@ -6,9 +6,9 @@
 
 In this workshop, we'll explore the powerful combination of large language models, vector search, and relational databases to create a truly intelligent film recommendation application. We'll be working with a MySQL on-premise database, showing how this traditional relational system can be transformed into an AI-powered recommendation engine that understands not just what films people like, but why they like them.
 
-### What You'll Learn
+### What You will Learn
 
-During this workshop, you'll build a complete application that can answer detailed questions about movies by combining the Sakila film database with AI-powered language generation. We'll start by building a standalone chatbot using Claude 3.7 Sonnet as our AI assistant, providing it with predefined prompts to generate the chatbot code based on our specifications. You'll get hands-on experience setting up RAG with MySQL's vector capabilities, and we'll leverage preexisting code to quickly deploy and test the finished application.
+During this workshop, you'll build a complete application that can answer detailed questions about movies by combining the Sakila film database, conversation history with AI-powered language generation. We'll start by building a standalone chatbot using Claude 3.7 Sonnet as our AI assistant, providing it with predefined prompts to generate the chatbot code based on our specifications. You'll get hands-on experience setting up RAG with MySQL's vector capabilities, and we'll leverage preexisting code to quickly deploy and test the finished application.
 
 ### Why This Matters
 
